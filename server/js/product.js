@@ -158,16 +158,6 @@ class Product{
                 })
             }
         }
-        $("img").hover(function(){
-           $(this).css({
-                opacity:.8
-            })
-        },function(){
-            $("img").css({
-                opacity:1
-            })
-        })
-      
     }
 }
 

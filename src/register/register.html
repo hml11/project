@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+    <header class="margin">
+        <a href="" class="logo"><img src="images/logo.png" alt=""></a>
+    </header>
+    <div id="register" class="margin">
+        <div class="register-t"> 
+             <a>注册</a> 
+        </div>
+        <div class="register-b">
+                <div class="register-b-l">
+                    <div class="title">
+                        填写手机账户信息（以下内容均为必填）
+                    </div>
+                    <form>
+                        <label for="">
+                            <b>用户名:</b>
+                            <input type="text" id="user"> 
+                            <span>4-20个字符，一个汉字为两个字符，推荐使用中文会会员名字。一旦注册成功会员名将不能修改。</span> 
+                        </label>  
+                        <label for="">
+                            <b>登录密码:</b>
+                            <input type="password" id="pass">
+                            <span></span>
+                        </label>
+                        <label for="">
+                            <b>确认密码:</b>
+                            <input type="text" id="pass2">
+                            <span></span>
+                        </label> 
+                        <input type="button" id="btn" value="注册">
+                        <span class="msg"></span>
+                    </form>
+                </div>
+                <div class="register-b-r">
+                    <a href="../index.html">
+                        <img src="images/reg1.png" alt="">
+                    </a>
+                    <a href="../login/login.html">注册成功，去登录</a>
+                    
+                </div>        
+         </div>       
+    
+	</div>
+</body>
+<script src="../js/jquery.2.2.4.js"></script>
+<script src="js/register.js"></script>
+</html>

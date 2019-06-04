@@ -24,41 +24,31 @@
       font: 12px/32px ""; }
     #login .margin .login-r {
       float: right;
-      width: 417px;
+      width: 550px;
       display: flex;
       align-items: center;
       height: 30px;
       font: 12px/30px ""; }
-      #login .margin .login-r .login {
-        position: relative; }
-        #login .margin .login-r .login ul {
-          border: 1px solid #ccc;
-          box-shadow: 0 0 5px #ccc;
-          width: 80px;
-          height: auto;
-          display: none;
-          padding: 5px 10px 10px;
-          z-index: 5;
-          top: 26px;
-          position: absolute; }
-      #login .margin .login-r .login > a {
-        display: block;
-        padding: 0 10px 0 5px;
-        line-height: 27px;
-        position: relative; }
+      #login .margin .login-r .not-login {
+        display: flex;
+        width: 200px;
+        text-align: center; }
+        #login .margin .login-r .not-login a {
+          flex: 1; }
+      #login .margin .login-r .login-success {
+        display: none;
+        width: 200px; }
       #login .margin .login-r .order {
         position: relative; }
       #login .margin .login-r .order > a {
-        position: absolute;
         display: block;
-        padding: 0 10px 0 5px;
         line-height: 27px;
         position: relative;
         background: url(../images/darrow.png) no-repeat right; }
       #login .margin .login-r .order ul {
         border: 1px solid #ccc;
+        width: 100px;
         position: absolute;
-        top: 26px;
         padding: 0 10px 0 5px;
         display: none;
         z-index: 5; }

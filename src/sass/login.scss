@@ -1,0 +1,114 @@
+.margin{
+    width:980px;
+    margin:0 auto;
+}
+header{
+    height:100px;
+    .logo{
+        width: 220px;
+        height: 100px;
+        display: block;
+        margin-top:10px;
+    }
+}
+#login{
+    .login-t{
+        border-bottom:2px solid #666;
+        a{
+            display: block;
+            height: 26px;
+            font-weight: 700;
+            line-height: 26px;
+            color: #FFF;
+            width: 160px;
+            background:#666;
+            text-align:center;
+            border-radius:7px 7px 0 0 ;
+        }
+    }
+    .login-b{
+        overflow:hidden;
+        .login-b-l{
+            float:left;
+            width:400px;
+            img{
+                width:400px;
+            }
+
+        }
+        .login-b-r{
+            width:500px;
+            float:right;
+            form{
+                border:1px solid #666;
+                padding:20px;
+                width:400px;
+                label{
+                    width:400px;
+                    height:30px;
+                    margin-top:20px; 
+                    overflow:hidden;
+                    display:block; 
+                    color: #999;  
+                    b{
+                        float:left;
+                        width:100px;
+                        font-size:14px;
+                    }
+                    input{
+                        float:left;
+                        border:1px solid #ccc;
+                        width:200px;
+                        margin-left:10px;
+                    }
+                    span{
+                        margin-left:5px;
+                        float:left;
+                        width:200px;
+                    }
+                }
+                #btn{
+                    display:block;
+                    border-radius:5px;
+                    border:0;
+                    width:120px;
+                    height:30px;
+                    background:#f8584f;
+                    margin:20px auto;
+                    color:#fff;
+                    font-size:14px;
+                }
+                .remember{
+                    width:200px;
+                    height:50px;
+                    display:flex;
+                    justify-content: center;
+                    input{
+                        margin-top:20px;
+                        margin-right:10px;
+                    }
+                }
+            }
+            .bottom{
+                width: 318px;
+                text-align: center;
+                padding: 15px 0;
+                margin-left: auto;
+                margin-right: auto;
+                border-top: 1px solid #F1F1F1;
+                overflow: hidden;
+            }
+        }
+        
+    }
+}
+footer{
+    padding-top:50px;
+    height:50px;
+    font:12px/50px "";
+    color: #333;
+    text-align: center;
+    a{
+        color: #333;
+    }
+}
