@@ -39,7 +39,8 @@
     overflow: hidden;
     left: 500px;
     top: 0;
-    display: none; }
+    display: none;
+    z-index: 100; }
     #details .detailsImg .cont .bImgbox .bImg {
       width: 1000px;
       height: 1000px;

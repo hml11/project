@@ -1,0 +1,57 @@
+.margin {
+  width: 1200px;
+  margin: 0 auto; }
+
+#main #ul {
+  display: flex;
+  flex-wrap: wrap; }
+  #main #ul .goodslist {
+    width: 230px;
+    height: 325px; }
+    #main #ul .goodslist .goods_img_box {
+      width: 100%;
+      height: 230px; }
+      #main #ul .goodslist .goods_img_box a {
+        display: block;
+        width: 100%;
+        height: 100%; }
+        #main #ul .goodslist .goods_img_box a img {
+          display: block;
+          width: 100%;
+          height: 100%; }
+    #main #ul .goodslist .name {
+      margin: 15px 0 15px 15px; }
+      #main #ul .goodslist .name .goodlist_discount {
+        float: right;
+        width: 40px;
+        height: 18px;
+        line-height: 18px;
+        border: 1px solid #f8584f;
+        text-align: center;
+        color: #f8584f;
+        background: #fdedec; }
+      #main #ul .goodslist .name .brand_name {
+        float: left;
+        font: 14px/18px "";
+        color: #919191; }
+      #main #ul .goodslist .name span {
+        display: block;
+        width: 200px;
+        height: 20px;
+        margin-top: 5px;
+        overflow: hidden; }
+        #main #ul .goodslist .name span a {
+          font: 14px/20px "";
+          color: #222; }
+    #main #ul .goodslist .price {
+      margin: 8px 16px 0 16px; }
+      #main #ul .goodslist .price b {
+        font: 800 14px/18px "";
+        color: #f8584f;
+        display: inline-block;
+        margin-right: 5px; }
+      #main #ul .goodslist .price i {
+        font: 12px/18px "";
+        display: inline-block;
+        color: #919191;
+        text-decoration: line-through; }

@@ -39,10 +39,10 @@ $("#txt").focus(function(){
             display:"none"
         });
     })
-    
-    $("img").hover(function(){
+    //设置图片透明性
+    $("main img").hover(function(){
         $(this).css({
-             opacity:.8
+             opacity:.6
          })
      },function(){
          $("img").css({
@@ -109,5 +109,12 @@ $("#txt").focus(function(){
     }
 
     new Index;
+
+    //楼梯效果
+    $(".stairs").children("li").click(function(){
+        $("html").animate({
+            scrollTop:$("main").children(".margin").children("div").eq($(this).index()).offset().top
+        })
+    })
      
 

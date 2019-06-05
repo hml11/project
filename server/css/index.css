@@ -480,3 +480,18 @@ footer {
         margin-left: 10px; }
       footer .copyright span a:first-child {
         margin-left: 0; }
+
+.stairs {
+  position: fixed;
+  right: 0;
+  bottom: 20px;
+  opacity: .7; }
+  .stairs li {
+    width: 100px;
+    height: 50px;
+    border: 1px solid #eee;
+    background: #ddd;
+    text-align: center;
+    line-height: 50px;
+    list-style: none;
+    cursor: pointer; }
