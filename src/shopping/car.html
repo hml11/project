@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        h2{margin: 20px 0;}
+        .tab img{width:50px;}
+        .tab .btn{width:150px;overflow:hidden;}
+        .tab input{float:left;width:50px;border:0;text-align:center;}
+        .tab span{float:left;border-radius:10px;overflow:hidden;}
+    </style>
+</head>
+<body>
+    <h2>商品列表<small><a href="goods.html">去结算</a></small></h2>
+    <table class="tab" width="1000" align="center" border=1 cellspacing=0>
+        <thead align="center">
+            <tr>
+                <td>选中</td>
+                <td>图片</td>
+                <td>名称</td>                
+                <td>单价</td>
+                <td>数量</td>
+                <td>总价</td> 
+                <td>操作</td>   
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot align="center">
+            <td>全选</td>
+            <td colspan="2">总计</td>
+            <td></td>
+            <td>共？件</td>
+            <td>总价</td>
+            <td>结算</td>
+        </tfoot>
+    </table>
+</body>
+<script src="jquery.2.2.4.js"></script>
+<script src="jquery.cookie.js"></script>
+<script>
+    class Car{
+        constructor(){
+            this.tbody=$("tbody");
+            this.url="http://localhost/shopping-jq/data/goods.json";
+            this.init();
+            this.addEvent();
+        }
+        init(){
+            var that=this;
+            $.ajax({
+               url:this.url,
+               success:function(res){
+                that.res=res;
+                that.getcookie();
+               } 
+            })
+        }
+        getcookie(){
+            //console.log($.cookie("shangpin"))
+           this.goods=JSON.parse($.cookie("shangpin"));
+           this.display();
+        }
+        display(){
+            // console.log(this.res);
+            // console.log(this.goods);
+            var str="";
+            for(var i=0;i<this.res.length;i++){
+                for(var j=0;j<this.goods.length;j++){
+                    if(this.res[i].goodsId==this.goods[j].id){
+                        str+=`<tr index="${this.goods[j].id}">
+                                <td><input type="checkbox"></td>
+                                <td><img src="${this.res[i].src}"/></td>
+                                <td>${this.res[i].name}</td>
+                                <td>${this.res[i].price}</td>
+                                <td class="btn">
+                                    <span><input type="button" value="+" /></span>
+                                    <input type="text" class="txt" value="${this.goods[j].num}"/>
+                                    <span ><input type="button" value="-" /></span>
+                                </td>
+                                <td class="sum">${this.goods[j].num*this.res[i].price}</td>
+                                <td><span class="delete">删除</span></td>
+                            </tr>`
+                    }
+                }
+            
+            }
+            this.tbody.html(str);
+        }
+        addEvent(){
+            var that=this;
+            this.tbody.on("click",".delete",function(){
+                that.id=$(this).parent().parent().attr("index");
+                $(this).parent().parent().remove();
+                    that.deletecookie();
+                    //console.log(that.id);
+            })
+            this.tbody.on("click","[value]",function(){
+                if($(this).val()=="+"){
+                    $(this).parent().next().val(parseInt($(this).parent().next().val())+1);
+                    that.v=$(this).parent().next().val();
+                    that.id=$(this).parent().parent().parent().attr("index");
+                    //console.log(that.v);
+                    that.setcookie();
+                    that.display();
+                    
+                    
+                }
+                else if($(this).val()=="-"){
+                   if($(this).parent().prev().val()==1){
+                    $(this).parent().prev().val()==1
+                   }
+                   else{
+                    $(this).parent().prev().val(parseInt($(this).parent().prev().val())-1) ;
+                    that.id=$(this).parent().parent().parent().attr("index");
+                    //console.log(that.id);
+                   }
+                   that.v=$(this).parent().prev().val();
+                   that.setcookie();
+                   that.display();
+                }
+                // for(var i=0;i<that.res.length;i++){
+                //         if(that.res[i].goodsId==that.id){
+                //             that.price=that.res[i].price;
+                //         }
+                // }
+                // $(this).parent().parent().parent().find(".sum").html(that.v*that.price);
+                
+            })
+            this.tbody.on("input",".txt",function(){
+                that.id=$(this).parent().parent().attr("index");
+                that.v=$(this).val();
+            //     for(var i=0;i<that.res.length;i++){
+            //             if(that.res[i].goodsId==that.id){
+            //                 that.price=that.res[i].price;
+            //             }
+            //     }
+            // $(this).parent().next().html(that.v*that.price);
+              that.setcookie();
+              that.display();
+            })
+            
+        }
+
+        deletecookie(){
+            for(var i=0;i<this.goods.length;i++){
+                if(this.goods[i].id==this.id){
+                this.goods.splice(i,1);
+                }
+            }
+            //console.log(this.goods);
+            $.cookie("shangpin",JSON.stringify(this.goods));
+        }
+        setcookie(){
+            for(var i=0;i<this.goods.length;i++){
+                if(this.goods[i].id==this.id){
+                    this.goods[i].num=this.v;
+                }
+            }
+            $.cookie("shangpin",JSON.stringify(this.goods));
+        }
+     }
+
+    new Car();
+</script>
+</html>

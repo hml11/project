@@ -16,7 +16,15 @@ class Product{
               // console.log(res);
                 that.res=res;
                 that.display();
+                that.link();
            }
+        })
+    }
+    link(){
+        console.log($(".goods_list"));
+        $(".goods_list").on("click",".goodslist",function(){
+            var goodsId=$(this).attr("id");
+            location.href="http://localhost:8383/details/details.html?shangpin="+goodsId;
         })
     }
     display(){
@@ -44,7 +52,7 @@ class Product{
                 </dt>`;
         for(var i=0;i<this.res.length;i++){
             if(this.res[i].type=="hot"){
-                str+=`<li class="goodslist">
+                str+=`<li class="goodslist" id=${this.res[i].id}>
                         <div class="goods_img_box">
                             <a>
                                 <img class="goods_img" src="${this.res[i].src}">
@@ -64,7 +72,7 @@ class Product{
                     </li>`
             }  
             if(this.res[i].type=="m"){
-                str1+=`<dd class="goodslist">
+                str1+=`<dd class="goodslist" id=${this.res[i].id}>
                             <div class="goods_img_box">
                                 <a>
                                     <img class="goods_img" src="${this.res[i].src}">
@@ -84,7 +92,7 @@ class Product{
                         </dd>`
             }  
             if(this.res[i].type=="w"){
-                str2+=`<dd class="goodslist">
+                str2+=`<dd class="goodslist" id=${this.res[i].id}>
                             <div class="goods_img_box">
                                 <a>
                                     <img class="goods_img" src="${this.res[i].src}">
@@ -104,7 +112,7 @@ class Product{
                         </dd>`
             }  
             if(this.res[i].type=="kid"){
-                str3+=`<dd class="goodslist">
+                str3+=`<dd class="goodslist" id=${this.res[i].id}>
                             <div class="goods_img_box">
                                 <a>
                                     <img class="goods_img" src="${this.res[i].src}">
@@ -124,7 +132,7 @@ class Product{
                         </dd>`
             }  
             if(this.res[i].type=="shoes"){
-                str4+=`<dd class="goodslist">
+                str4+=`<dd class="goodslist" id=${this.res[i].id}>
                             <div class="goods_img_box">
                                 <a>
                                     <img class="goods_img" src="${this.res[i].src}">

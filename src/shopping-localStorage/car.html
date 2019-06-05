@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .tab img{width:50px;}
+        .tab .delete{cursor: pointer;}
+    </style>
+</head>
+<body>
+     <h2>购物车<small><a href="goods.html">继续购物</a></small></h2>
+     <table border="1" cellspacing="0" width="800" align="center" class="tab">
+         <thead>
+                <tr>
+                    <td>选中</td>
+                    <td>图片</td>
+                    <td>名称</td>
+                    <td>价格</td>
+                    <td>数量</td>
+                    <td>总价</td>
+                    <td>操作</td>
+                </tr>
+         </thead>
+         <tbody align="center">
+             
+         </tbody>
+     </table>
+</body>
+<script src="ajax2.0.js"></script>
+<script src="cookie.js"></script>
+<script>
+    class Car{
+        constructor(){
+            this.tbody=document.querySelector("tbody");
+            this.url="http://localhost/shopping/data/goods.json";
+            this.init();
+            this.addEvent();
+        }
+        init(){
+            var that=this;
+            ajax({
+                url:this.url,
+                success:function(res){
+                    //console.log(res);
+                    that.res=JSON.parse(res);
+                    that.getLocalStorage();
+                }
+            })
+        }
+        getLocalStorage(){
+            this.goods=JSON.parse(localStorage.getItem("shangpin"));
+            //console.log(this.goods);
+           this.display();
+        }
+        display(){
+            //  console.log(this.res);
+              //console.log(this.goods);
+            var str="";
+            for(var i=0;i<this.res.length;i++){
+                for(var j=0;j<this.goods.length;j++){
+                    if(this.goods[j].id==this.res[i].goodsId){
+                        str+=`<tr index=${this.goods[j].id}>
+                                <td><input type="checkbox"/></td>
+                                <td><img src="${this.res[i].src}"></td>
+                                <td>${this.res[i].name}</td>
+                                <td>${this.res[i].price}</td>
+                                <td><input type="number" min="1" value="${this.goods[j].num}"/></td>
+                                <td>${this.res[i].price*this.goods[j].num}</td>
+                                <td><span class="delete">删除</span></td>
+                            </tr>`;
+                    }
+                }
+            }
+            this.tbody.innerHTML=str;
+           }
+        addEvent(){
+            var that=this;
+            this.tbody.addEventListener("click",function(eve){
+                var e=eve||window.event;
+                var target=e.target||e.srcElement;
+                if(target.className=="delete"){
+                    target.parentNode.parentNode.remove();
+                    that.id=target.parentNode.parentNode.getAttribute("index");
+                    that.changeLocalStorage(function(i){
+                        that.goods.splice(i,1);
+                        console.log(that.goods);
+                        
+                    });
+                }
+            })
+
+            this.tbody.addEventListener("input",function(eve){
+                var e=eve||window.event;
+                var target=e.target||e.srcElement;
+                if(target.type=="number"){
+                    that.id=target.parentNode.parentNode.getAttribute("index");
+                    for(var j=0;j<that.res.length;j++){
+                       if(that.res[j].goodsId==that.id){
+                          that.price=that.res[j].price;
+                       }
+                    }
+                    that.changeLocalStorage(function(i){
+                        that.goods[i].num=target.value;
+                        target.parentNode.nextElementSibling.innerHTML=that.price*target.value;
+                    });
+                }
+            })
+         }
+            changeLocalStorage(callback){
+                for(var i=0;i<this.goods.length;i++){
+                    if(this.goods[i].id==this.id){
+                        callback(i);
+                    }
+                }
+                localStorage.setItem("shangpin",JSON.stringify(this.goods));
+            }
+    }
+    new Car();
+</script>
+</html>

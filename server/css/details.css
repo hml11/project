@@ -1,0 +1,179 @@
+.margin {
+  width: 1200px;
+  margin: 0 auto; }
+
+#details .navLink {
+  margin: 0 auto;
+  overflow: hidden;
+  height: auto;
+  padding: 5px 0;
+  width: auto; }
+  #details .navLink a {
+    color: #000; }
+
+#details .detailsImg .cont {
+  float: left;
+  width: 480px;
+  height: 480px;
+  position: relative; }
+  #details .detailsImg .cont .sImgbox {
+    width: 480px;
+    height: 480px;
+    position: absolute;
+    cursor: crosshair; }
+    #details .detailsImg .cont .sImgbox .sImg {
+      width: 480px;
+      height: 480px; }
+    #details .detailsImg .cont .sImgbox span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 200px;
+      background: rgba(200, 200, 200, 0.6);
+      display: none; }
+  #details .detailsImg .cont .bImgbox {
+    position: absolute;
+    width: 480px;
+    height: 480px;
+    overflow: hidden;
+    left: 500px;
+    top: 0;
+    display: none; }
+    #details .detailsImg .cont .bImgbox .bImg {
+      width: 1000px;
+      height: 1000px;
+      position: absolute;
+      top: 0;
+      left: 0; }
+
+#details .detailsImg #goods_info {
+  width: 670px;
+  float: left;
+  margin-left: 20px; }
+  #details .detailsImg #goods_info .brandname {
+    position: relative;
+    box-sizing: border-box;
+    overflow: inherit;
+    width: 670px;
+    font: 700 16px/24px "";
+    color: #222; }
+    #details .detailsImg #goods_info .brandname a {
+      font: 700 18px/24px "";
+      text-transform: uppercase;
+      float: left;
+      margin-right: 10px;
+      color: #222; }
+  #details .detailsImg #goods_info .baseinfo {
+    width: 670px;
+    height: auto;
+    box-sizing: border-box;
+    margin-top: 18px;
+    background: #f6f6f6; }
+    #details .detailsImg #goods_info .baseinfo .detail_price {
+      width: 670px;
+      overflow: hidden;
+      padding-top: 15px;
+      box-sizing: border-box; }
+      #details .detailsImg #goods_info .baseinfo .detail_price b {
+        font-size: 12px;
+        color: #222; }
+      #details .detailsImg #goods_info .baseinfo .detail_price strong {
+        font-weight: 700px;
+        font-size: 22px;
+        color: #f8584f; }
+      #details .detailsImg #goods_info .baseinfo .detail_price em {
+        text-decoration: line-through;
+        color: #696969; }
+      #details .detailsImg #goods_info .baseinfo .detail_price span {
+        float: right;
+        width: auto;
+        height: auto;
+        padding: 3px 10px;
+        color: #fff;
+        background-color: #f84646;
+        margin-top: 5px; }
+    #details .detailsImg #goods_info .baseinfo .detail_rebate {
+      width: 670px;
+      overflow: hidden;
+      padding-top: 15px;
+      box-sizing: border-box;
+      padding: 15px 15px 0;
+      color: #696969; }
+      #details .detailsImg #goods_info .baseinfo .detail_rebate div:first-child {
+        float: left; }
+      #details .detailsImg #goods_info .baseinfo .detail_rebate div:nth-child(2) {
+        float: right;
+        width: 100px;
+        float: right;
+        text-align: right;
+        display: block;
+        cursor: pointer;
+        text-decoration: underline;
+        margin-top: 0; }
+        #details .detailsImg #goods_info .baseinfo .detail_rebate div:nth-child(2) .rule {
+          width: 400px;
+          height: auto;
+          position: absolute;
+          text-decoration: none;
+          display: none;
+          z-index: 111;
+          text-align: left;
+          margin-left: -320px;
+          padding: 10px;
+          line-height: 150%;
+          background-color: #fff;
+          box-shadow: 0 0 15px #ccc; }
+      #details .detailsImg #goods_info .baseinfo .detail_rebate div:nth-child(2):hover .rule {
+        display: block; }
+  #details .detailsImg #goods_info .saleinfo {
+    width: 670px;
+    line-height: 16px;
+    height: 16px;
+    padding: 6px 0;
+    margin-top: 20px; }
+    #details .detailsImg #goods_info .saleinfo .clipbox {
+      width: 370px;
+      display: flex;
+      justify-content: space-around; }
+      #details .detailsImg #goods_info .saleinfo .clipbox span {
+        color: #f8584f;
+        display: inline-block;
+        margin: 0 4px; }
+  #details .detailsImg #goods_info .details_colorsize dl {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px; }
+  #details .detailsImg #goods_info .details_colorsize dt {
+    width: 100%;
+    height: auto;
+    float: left; }
+    #details .detailsImg #goods_info .details_colorsize dt b {
+      font-weight: 400;
+      color: #666; }
+  #details .detailsImg #goods_info .details_colorsize dd {
+    cursor: pointer;
+    overflow: hidden;
+    float: left; }
+    #details .detailsImg #goods_info .details_colorsize dd a {
+      padding: 1px;
+      float: left;
+      display: block;
+      margin-top: 10px;
+      margin-right: 10px; }
+      #details .detailsImg #goods_info .details_colorsize dd a img {
+        width: 51px;
+        height: 51px; }
+    #details .detailsImg #goods_info .details_colorsize dd a.selected {
+      border: 2px solid #F8584F;
+      padding: 0; }
+  #details .detailsImg #goods_info .shoppingbag a {
+    width: 200px;
+    text-align: center;
+    background-color: #F8584F;
+    font: 700 14px/50px "";
+    display: block;
+    color: #fff;
+    border-radius: 2px;
+    margin-top: 40px;
+    cursor: pointer; }
