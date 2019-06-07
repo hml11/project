@@ -1,6 +1,9 @@
 h2 {
   margin: 20px 0; }
 
+.tab {
+  font-size: 14px; }
+
 .tab img {
   width: 50px; }
 
@@ -18,3 +21,18 @@ h2 {
   float: left;
   border-radius: 10px;
   overflow: hidden; }
+
+.tab .delete {
+  display: block;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  font: 14px/40px ""; }
+
+.tab tfoot a {
+  display: block;
+  width: 100%;
+  height: 40px;
+  font: 16px/40px "";
+  color: red;
+  cursor: pointer; }

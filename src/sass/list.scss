@@ -3,12 +3,15 @@
     margin:0 auto;
 }
 #main{
-    #ul{
+    height:auto;
+    #list{
         display:flex;
         flex-wrap:wrap;
+        justify-content: space-between;
         .goodslist{
+            margin-top:10px;
             width:230px;
-            height:325px;
+            margin-left:20px;
             .goods_img_box{
                 width:100%;
                 height:230px;
@@ -24,7 +27,7 @@
                 }
             }
             .name{
-                margin:15px 0 15px 15px;
+                margin:15px 0 0 15px;
                 .goodlist_discount{
                     float:right;
                     width:40px;
@@ -53,7 +56,7 @@
                 }
             }
             .price{
-                margin:8px 16px 0 16px;
+                margin:10px 16px 0 16px;
                 b{
                     font:800 14px/18px "";
                     color:#f8584f;
@@ -68,5 +71,11 @@
                 }
             }   
         }
+    }
+    #Pagination{
+        display:flex;
+        justify-content: center;
+        margin:20px 0;
+      
     }
 }

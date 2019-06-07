@@ -81,37 +81,51 @@ header {
     margin-left: 65px;
     padding-top: 7px;
     float: left;
-    width: 750px;
-    overflow: hidden; }
-    header .header-c form {
-      float: left;
-      height: 34px;
-      width: 378px;
+    width: 750px; }
+    header .header-c .search {
       position: relative; }
-      header .header-c form input {
-        outline: 0; }
-      header .header-c form #txt {
+      header .header-c .search form {
         float: left;
-        width: 300px;
-        height: 34px;
-        border: 1px solid #f00;
-        box-sizing: border-box;
-        padding: 5px 0 5px 5px; }
-      header .header-c form #sub {
-        border: 0;
-        float: right;
-        width: 78px;
-        height: 34px;
-        background: #f00;
-        color: #fff; }
-      header .header-c form i.searchicon {
+        width: 378px;
+        height: 34px; }
+        header .header-c .search form input {
+          outline: 0; }
+        header .header-c .search form #txt {
+          float: left;
+          width: 300px;
+          height: 34px;
+          border: 1px solid #f00;
+          box-sizing: border-box;
+          padding: 5px 0 5px 5px; }
+        header .header-c .search form #sub {
+          border: 0;
+          float: right;
+          width: 78px;
+          height: 34px;
+          background: #f00;
+          color: #fff; }
+        header .header-c .search form i.searchicon {
+          position: absolute;
+          width: 18px;
+          height: 18px;
+          background: url(../images/searchicon.png) no-repeat center;
+          background-size: cover;
+          top: 10px;
+          right: 55px; }
+      header .header-c .search .searchList {
         position: absolute;
-        width: 18px;
-        height: 18px;
-        background: url(../images/searchicon.png) no-repeat center;
-        background-size: cover;
-        top: 10px;
-        right: 55px; }
+        top: 34px;
+        left: 0;
+        z-index: 999; }
+        header .header-c .search .searchList li {
+          width: 300px;
+          height: 34px;
+          font: 12px/34px "";
+          background: #ddd;
+          border: 1px solid #eee; }
+        header .header-c .search .searchList li.active {
+          background: darkgray;
+          color: #fff; }
     header .header-c .list {
       float: right;
       display: flex;

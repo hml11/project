@@ -7,10 +7,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/public.css">
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="css/pagination.css">
     <link rel="stylesheet" href="../css/list.css">
     <script src="../js/jquery.2.2.4.js"></script>
     <script src="js/jquery.cookie.js"></script>
-    <script src="js/list.js"></script>
+    <script src="jquery.pagination.js"></script>
+    
     <script>
         $(function(){
             $("#head").load("http://localhost:8383/data/head.html");
@@ -22,7 +24,9 @@
     <div id="head"></div>
     <div id="main" class="margin">
         <ul id="list"></ul>
+        <div id="Pagination" class="pagination"></div>
     </div>
     <div id="foot"></div>
 </body>
+<script src="js/list.js"></script>
 </html>

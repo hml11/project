@@ -116,5 +116,61 @@ $("#txt").focus(function(){
             scrollTop:$("main").children(".margin").children("div").eq($(this).index()).offset().top
         })
     })
-     
+    //搜索栏下拉菜单
+    class Search{
+        constructor(){
+            this.txt=$("#txt");
+            this.list=$(".searchList");
+            this.url="https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su"
+            this.index=0;
+            this.onoff=0;
+            this.init();
+            this.addEvent();
+        }
+        init(){
+           // console.log(this.txt)
+           var that=this;
+           this.txt.on("input",function(){
+            $.ajax({
+                url:that.url,
+                data:{
+                wd:that.txt.val()
+                },
+                success:function(res){
+                that.res=res;
+                that.display();
+                },
+                dataType:"jsonp", 
+                jsonp:"cb" 
+                })
+           })
+        
+        }
+        display(){
+            if(this.onoff==1){
+                this.list.css({
+                    display:"block"
+                })
+            }
+            var str="";
+            for(var i=0;i<this.res.s.length;i++){
+                str+=`<li index=${i}>
+                        ${this.res.s[i]}
+                        </li>`
+            }
+            this.list.html(str);
+        }
+        addEvent(){
+            var that=this;
+            this.list.on("click","li",function(){
+                that.txt.val($(this).html());
+                that.list.hide();
+            })
+           // console.log($(document))
+           
+        }
+        
+    }
+    new Search();
+    
 

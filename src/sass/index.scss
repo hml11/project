@@ -103,44 +103,61 @@ header{
         padding-top:7px;
         float:left;
         width:750px;
-        overflow:hidden;
-        form{
-            float:left;
-            height:34px;
-            width:378px;
+        .search{
             position:relative;
-            input{
-                outline:0;
-            }
-            #txt{
+            form{
                 float:left;
-                width:300px;
+                width:378px;
                 height:34px;
-                border:1px solid #f00;
-                box-sizing:border-box;
-                padding:5px 0 5px 5px;
-
+                input{
+                    outline:0;
+                }
+                #txt{
+                    float:left;
+                    width:300px;
+                    height:34px;
+                    border:1px solid #f00;
+                    box-sizing:border-box;
+                    padding:5px 0 5px 5px;
+    
+                }
+                #sub{
+                    border:0;
+                    float:right;
+                    width:78px;
+                    height:34px;
+                    background:#f00;
+                    color:#fff;
+                }
+                i.searchicon{
+                    position:absolute;
+                    width:18px;
+                    height:18px;
+                    background:url(../images/searchicon.png) no-repeat center;
+                    background-size: cover;
+                    top:10px;
+                    right:55px;
+                    
+                }
+               
             }
-            #sub{
-                border:0;
-                float:right;
-                width:78px;
-                height:34px;
-                background:#f00;
-                color:#fff;
+            .searchList{
+                    position:absolute;
+                    top:34px;
+                    left:0;
+                    z-index:999;
+                    li{
+                        width:300px;
+                        height:34px;
+                        font:12px/34px "";
+                        background:#ddd;
+                        border:1px solid #eee;
+                    }
+                    li.active{background:darkgray;color:#fff;}
             }
-            i.searchicon{
-                position:absolute;
-                width:18px;
-                height:18px;
-                background:url(../images/searchicon.png) no-repeat center;
-                background-size: cover;
-                top:10px;
-                right:55px;
-                
-            }
+    
         }
-
+        
         .list{
             float:right;
             display:flex;

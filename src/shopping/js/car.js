@@ -1,6 +1,9 @@
 class Car{
     constructor(){
         this.tbody=$("tbody");
+        this.totalNum=$("tfoot").find(".totalNum");
+        this.totalPrice=$("tfoot").find(".totalPrice");
+        
         this.url="http://localhost:8383/data/data.json";
         this.init();
     }
@@ -20,13 +23,13 @@ class Car{
        this.display();
     }
     display(){
-        console.log(this.res);
-        console.log(this.goods);
+        // console.log(this.res);
+        // console.log(this.goods);
         var str="";
         for(var i=0;i<this.res.length;i++){
             for(var j=0;j<this.goods.length;j++){
                 if(this.res[i].id==this.goods[j].id){
-                    str+=`<tr index="${this.goods[j].id}">
+                    str+=`<tr index=${this.goods[j].id} align="center">
                             <td><input type="checkbox"></td>
                             <td><img src="${this.res[i].src}"/></td>
                             <td>${this.res[i].name}</td>
@@ -46,6 +49,10 @@ class Car{
         //console.log(str);
         this.tbody.html(str);
         this.addEvent();
+        // console.log(this.totalNum);
+        // console.log(this.totalPrice);
+        // console.log(this.goods)
+        this.setTotal();
     }
     addEvent(){
         var that=this;
@@ -55,30 +62,38 @@ class Car{
                 that.deletecookie();
                 //console.log(that.id);
         })
-        this.tbody.on("click",".add",function(){
-            $(this).parents(".btn").children(".goodsnumber").val((parseInt($(this).parents(".btn").children(".goodsnumber").val())+1));
-                that.v=parseInt($(this).parents(".btn").children(".goodsnumber").val());
-                that.id=$(this).parent("tr").attr("index");
-                console.log(that.v);
+       // console.log($(".add"));
+        $(".add").on("click",function(){
+                $(this).parents(".btn").children(".goodsnumber").val(parseInt($(this).parents(".btn").children(".goodsnumber").val())+1);
+                that.v=parseInt($(this).parents(".btn").children(".goodsnumber").val())
+                //console.log(that.v);
+                that.id=$(this).parents("tr").attr("index");
                 that.setcookie();
                 that.display();
         })
-        this.tbody.on("click",".reduce",function(){
-            if( $(this).parents(".btn").children(".goodsnumber").val()==1){
-                $(this).parents(".btn").children(".goodsnumber").val()=1
-            }
-            else{
-                $(this).parents(".btn").children(".goodsnumber").val((parseInt($(this).parents(".btn").children(".goodsnumber").val())-1));
-            }
-                that.v=parseInt($(this).parents(".btn").children(".goodsnumber").val());
-                that.id=$(this).parent("tr").attr("index");
-                console.log(that.v);
-                that.setcookie();
-                that.display();
-        })
-        this.tbody.on("input",".txt",function(){
+
+            $(".reduce").on("click",function(){
+                $(this).css({
+                    background:"yellow"
+                })
+                if( $(this).parents(".btn").children(".goodsnumber").val()=="1"){
+                    $(this).parents(".btn").children(".goodsnumber").val(1);
+                }
+                else{
+                    $(this).parents(".btn").children(".goodsnumber").val((parseInt($(this).parents(".btn").children(".goodsnumber").val())-1));
+                }
+                    that.v=parseInt($(this).parents(".btn").children(".goodsnumber").val());
+                    that.id=$(this).parents("tr").attr("index");
+
+                // console.log($(this).parents("tr"));
+                    that.setcookie();
+                    that.display();
+            })
+        this.tbody.on("change",".goodsnumber",function(){
             that.id=$(this).parent().parent().attr("index");
             that.v=$(this).val();
+            console.log(that.v);
+            console.log("hello")
             that.setcookie();
             that.display();
         })
@@ -101,6 +116,23 @@ class Car{
         }
         $.cookie("shangpin",JSON.stringify(this.goods));
     }
- }
+    setTotal(){
+        var sum=$("tbody").find(".sum");
+       // console.log(sum);
+       var p=0;
+       for(var i=0;i<sum.length;i++){
+          p+=parseFloat(sum.eq(i).html());
+       }
 
-new Car();
+       this.totalPrice.html("总价:"+p.toFixed(2));
+       var goodsnumber=$("tbody").find(".goodsnumber");
+       var n=0;
+        for(var i=0;i<goodsnumber.length;i++){
+           n+=parseInt(goodsnumber.eq(i).val());
+        }
+       
+        this.totalNum.html("共"+n+"件");
+
+    }
+ }
+ new Car()

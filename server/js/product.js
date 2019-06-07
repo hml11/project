@@ -179,7 +179,6 @@ class Product{
         var scrollT = document.documentElement.scrollTop;
         
         for(var i=0;i<aimg.length;i++){
-            console.log((aimg[i].src))
           if(aimg[i].src != "http://localhost:8383/images/loading.gif") continue;
             if(aimg[i].offsetTop < clientH + scrollT){
                 aimg[i].src = aimg[i].getAttribute("data-src");

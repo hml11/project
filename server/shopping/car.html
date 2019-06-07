@@ -6,9 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/car.css">
+    <script src="js/jquery.2.2.4.js"></script>
+    <script>
+        $(function(){
+            $("#head").load("http://localhost:8383/data/head.html");
+            $("#foot").load("http://localhost:8383/data/foot.html");
+        })
+    </script>
 </head>
 <body>
+    <div id="head"></div>
     <h2>商品列表<small><a href="http://localhost:8383/">继续购物</a></small></h2>
     <table class="tab" width="1000" align="center" border=1 cellspacing=0>
         <thead align="center">
@@ -28,13 +37,13 @@
             <td>全选</td>
             <td colspan="2">总计</td>
             <td></td>
-            <td>共？件</td>
-            <td>总价</td>
-            <td>结算</td>
+            <td class="totalNum"></td>
+            <td class="totalPrice"></td>
+            <td><a>结算</a></td>
         </tfoot>
     </table>
+    <div id="foot"></div>
 </body>
-<script src="js/jquery.2.2.4.js"></script>
 <script src="js/jquery.cookie.js"></script>
 <script src="js/car.js"></script>
 </html>

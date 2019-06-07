@@ -1,6 +1,6 @@
 [{
     "id":"goods1",
-    "src":"https://pic.banggo.com/sources/images/goods/MB/661791/661791_00.jpg?x-oss-process=image/resize,m_fill,w_350/quality,Q_50",
+    "src":"http://localhost:8383/data/data-images/goods1.jpg",
     "name":"【夏季新品】男休闲叠印字母印花短袖T恤",
     "brandname":"METERSBONWE",
     "price":"69.9",
@@ -11,7 +11,7 @@
     "type":"hot"
 },{
     "id":"goods2",
-    "src":"http://pic.banggo.com/sources/images/goods/MB/241407/241407_00.jpg?x-oss-process=image/resize,m_fill,w_350/quality,Q_50",
+    "src":"http://localhost:8383/data/data-images/goods2.jpg",
     "name":"女都雪纺中长连衣裙",
     "brandname":"METERSBONWE",
     "price":"109.9",
@@ -22,7 +22,7 @@
     "type":"hot"
 },{
     "id":"goods3",
-    "src":"https://pic.banggo.com/sources/images/goods/MB/661957/661957_00.jpg?x-oss-process=image/resize,m_fill,w_350/quality,Q_50",
+    "src":"http://localhost:8383/data/data-images/goods3.jpg",
     "name":"男潮流国潮印花短袖T恤",
     "brandname":"METERSBONWE",
     "price":"79.9",
@@ -34,7 +34,7 @@
 },
 {
     "id":"goods4",
-    "src":"https://pic.banggo.com/sources/images/goods/MB/603945/603945_00.jpg?x-oss-process=image/resize,m_fill,w_350/quality,Q_50",
+    "src":"http://localhost:8383/data/data-images/goods4.jpg",
     "name":"【夏季新品】女百搭宽松光版短袖T恤",
     "brandname":"METERSBONWE",
     "price":"39",
@@ -45,7 +45,7 @@
     "type":"hot"
 },{
     "id":"goods5",
-    "src":"https://pic.banggo.com/sources/images/goods/MB/661770/661770_00.jpg?x-oss-process=image/resize,m_fill,w_350/quality,Q_50",
+    "src":"http://localhost:8383/data/data-images/goods5.jpg",
     "name":"【夏季新品】男潮流后侧字母印花短袖T恤",
     "brandname":"METERSBONWE",
     "price":"46.9",
@@ -56,7 +56,7 @@
     "type":"hot"
 },{
     "id":"goods6",
-    "src":"https://pic.banggo.com/sources/images/goods/MC/544337/544337_00.jpg?x-oss-process=image/resize,m_fill,w_350/quality,Q_50",
+    "src":"http://localhost:8383/data/data-images/goods6.jpg",
     "name":"女式时尚麻质连衣裙",
     "brandname":"ME＆CITY",
     "price":"155.9",
@@ -67,7 +67,7 @@
     "type":"hot"
 },{
     "id":"goods7",
-    "src":"https://pic.banggo.com/sources/images/goods/MC/552231/552231_00.jpg?x-oss-process=image/resize,m_fill,w_350/quality,Q_50",
+    "src":"http://localhost:8383/data/data-images/goods7.jpg",
     "name":"男宽松七分中裤",
     "brandname":"ME＆CITY",
     "price":"53.9",
@@ -79,7 +79,7 @@
 },
 {
     "id":"goods8",
-    "src":"https://pic.banggo.com/sources/images/goods/MB/241400/241400_00.jpg?x-oss-process=image/resize,m_fill,w_350/quality,Q_50",
+    "src":"http://localhost:8383/data/data-images/goods8.jpg",
     "name":"女都条纹假两件连衣裙",
     "brandname":"METERSBONWE",
     "price":"119.9",
@@ -91,7 +91,7 @@
 },
 {
     "id":"goods9",
-    "src":"https://pic.banggo.com/sources/seller/goods/image/5200537/A04956/A04956_00.jpg?x-oss-process=image/resize,m_fill,w_350/quality,Q_50",
+    "src":"http://localhost:8383/data/data-images/goods9.jpg",
     "name":"17新品夏装时尚潮男糖果色系绳系运动休闲短裤",
     "brandname":"赛宾保罗",
     "price":"39.9",
@@ -102,7 +102,7 @@
     "type":"hot"
 },{
     "id":"goods10",
-    "src":"https://pic.banggo.com/sources/seller/goods/image/5200505/A78990/A78990_00.jpg?x-oss-process=image/resize,m_fill,w_350/quality,Q_50",
+    "src":"http://localhost:8383/data/data-images/goods10.jpg",
     "name":"夏季新款白色小花刺绣棉布连衣裙小清新连衣裙",
     "brandname":"ANMO",
     "price":"59.00",
@@ -113,7 +113,7 @@
     "type":"hot"
 },{
     "id":"goods11",
-    "src":"https://pic.banggo.com/sources/images/goods/MC/508267/508267_00.jpg?x-oss-process=image/resize,m_fill,w_350/quality,Q_50",
+    "src":"http://localhost:8383/data/data-images/goods11.jpg",
     "name":"【夏季新品】男前后小字母印花短袖T恤",
     "brandname":"ME＆CITY",
     "price":"98.9",
@@ -124,7 +124,7 @@
     "type":"m"
 },{
     "id":"goods12",
-    "src":"https://pic.banggo.com/sources/images/goods/MB/706212/706212_00.jpg?x-oss-process=image/resize,m_fill,w_350/quality,Q_50",
+    "src":"http://localhost:8383/data/data-images/goods12.jpg",
     "name":"男MTEE迪士尼漫威漫画口袋印花T恤",
     "brandname":"METERSBONWE",
     "price":"99",
@@ -135,7 +135,7 @@
     "type":"m"
 },{
     "id":"goods13",
-    "src":"https://pic.banggo.com/sources/images/goods/MB/661744/661744_00.jpg?x-oss-process=image/resize,m_fill,w_350/quality,Q_50",
+    "src":"http://localhost:8383/data/data-images/goods13.jpg",
     "name":"【夏季新品】男休闲假两件短袖T恤",
     "brandname":"METERSBONWE",
     "price":"59.9",
@@ -146,7 +146,7 @@
     "type":"m"
 },{
     "id":"goods14",
-    "src":"https://pic.banggo.com/sources/images/goods/MB/661733/661733_00.jpg?x-oss-process=image/resize,m_fill,w_350/quality,Q_50",
+    "src":"http://localhost:8383/data/data-images/goods14.jpg",
     "name":"【夏季新品】男休闲字母印花短袖T恤",
     "brandname":"METERSBONWE",
     "price":"59.9",
@@ -157,7 +157,7 @@
     "type":"m"
 },{
     "id":"goods15",
-    "src":"https://pic.banggo.com/sources/images/goods/MB/661403/661403_00.jpg?x-oss-process=image/resize,m_fill,w_350/quality,Q_50",
+    "src":"http://localhost:8383/data/data-images/goods15.jpg",
     "name":"男休闲粗条纹短袖POLO衫",
     "brandname":"METERSBONWE",
     "price":"68.9",
@@ -169,7 +169,7 @@
 },
 {
     "id":"goods16",
-    "src":"https://pic.banggo.com/sources/images/goods/MB/661225/661225_00.jpg?x-oss-process=image/resize,m_fill,w_350/quality,Q_50",
+    "src":"http://localhost:8383/data/data-images/goods16.jpg",
     "name":"男基础多色舒适牛津纺短袖衬衫",
     "brandname":"METERSBONWE",
     "price":"42.9",
@@ -181,7 +181,7 @@
 },
 {
     "id":"goods17",
-    "src":"https://pic.banggo.com/sources/images/goods/MB/601937/601937_00.jpg?x-oss-process=image/resize,m_fill,w_350/quality,Q_50",
+    "src":"http://localhost:8383/data/data-images/goods17.jpg",
     "name":"男款韩版短外套牛仔夹克宋威龙同款",
     "brandname":"METERSBONWE",
     "price":"71.9",
@@ -193,7 +193,7 @@
 },
 {
     "id":"goods18",
-    "src":"https://pic.banggo.com/sources/images/goods/MB/252488/252488_00.jpg?x-oss-process=image/resize,m_fill,w_350/quality,Q_50",
+    "src":"http://localhost:8383/data/data-images/goods18.jpg",
     "name":"男质朴工装宽松中裤",
     "brandname":"METERSBONWE",
     "price":"199",
@@ -204,7 +204,7 @@
     "type":"m"
 },{
     "id":"goods19",
-    "src":"https://pic.banggo.com/sources/images/goods/MB/603948/603948_00.jpg?x-oss-process=image/resize,m_fill,w_350/quality,Q_50",
+    "src":"http://localhost:8383/data/data-images/goods19.jpg",
     "name":"【夏季新品】女叠影印花短袖T",
     "brandname":"METERSBONWE",
     "price":"69.9",
@@ -215,7 +215,7 @@
     "type":"w"
 },{
     "id":"goods20",
-    "src":"https://pic.banggo.com/sources/images/goods/MB/603571/603571_00.jpg?x-oss-process=image/resize,m_fill,w_350/quality,Q_50",
+    "src":"http://localhost:8383/data/data-images/goods20.jpg",
     "name":"女雪纺剪花点点梭织连衣裙",
     "brandname":"METERSBONWE",
     "price":"109.9",
@@ -226,7 +226,7 @@
     "type":"w"
 },{
     "id":"goods21",
-    "src":"https://pic.banggo.com/sources/images/goods/MB/726599/726599_00.jpg?x-oss-process=image/resize,m_fill,w_350/quality,Q_50",
+    "src":"http://localhost:8383/data/data-images/goods21.jpg",
     "name":"【夏季新品】女休闲简单绣花小字体短袖恤",
     "brandname":"METERSBONWE",
     "price":"69",
@@ -237,7 +237,7 @@
     "type":"w"
 },{
     "id":"goods22",
-    "src":"https://pic.banggo.com/sources/images/goods/MB/603681/603681_00.jpg?x-oss-process=image/resize,m_fill,w_350/quality,Q_50",
+    "src":"http://localhost:8383/data/data-images/goods22.jpg",
     "name":"女潮流时尚大袖雪纺衫",
     "brandname":"METERSBONWE",
     "price":"84.9",
@@ -248,7 +248,7 @@
     "type":"w"
 },{
     "id":"goods23",
-    "src":"https://pic.banggo.com/sources/images/goods/MB/603590/603590_00.jpg?x-oss-process=image/resize,m_fill,w_350/quality,Q_50",
+    "src":"http://localhost:8383/data/data-images/goods23.jpg",
     "name":"女木耳边褶皱衬衫",
     "brandname":"METERSBONWE",
     "price":"63.9",
@@ -259,7 +259,7 @@
     "type":"w"
 },{
     "id":"goods24",
-    "src":"https://pic.banggo.com/sources/images/goods/MB/603432/603432_00.jpg?x-oss-process=image/resize,m_fill,w_350/quality,Q_50",
+    "src":"http://localhost:8383/data/data-images/goods24.jpg",
     "name":"女落肩系带装饰短夹克",
     "brandname":"METERSBONWE",
     "price":"97.9",
@@ -270,7 +270,7 @@
     "type":"w"
 },{
     "id":"goods25",
-    "src":"https://pic.banggo.com/sources/images/goods/MB/604587/604587_00.jpg?x-oss-process=image/resize,m_fill,w_350/quality,Q_50",
+    "src":"http://localhost:8383/data/data-images/goods25.jpg",
     "name":"女可爱贴袋背带牛仔裤",
     "brandname":"METERSBONWE",
     "price":"92.9",
@@ -281,7 +281,7 @@
     "type":"w"
 },{
     "id":"goods26",
-    "src":"https://pic.banggo.com/sources/images/goods/MC/544507/544507_00.jpg?x-oss-process=image/resize,m_fill,w_350/quality,Q_50",
+    "src":"http://localhost:8383/data/data-images/goods26.jpg",
     "name":"女收腰印花连衣裙",
     "brandname":"ME＆CITY",
     "price":"289.9",
@@ -292,7 +292,7 @@
     "type":"w"
 },{
     "id":"goods27",
-    "src":"https://pic.banggo.com/sources/images/goods/MB/204479/204479_00.jpg?x-oss-process=image/resize,m_fill,w_350/quality,Q_50",
+    "src":"http://localhost:8383/data/data-images/goods27.jpg",
     "name":"女婴童多彩卡通短袖T恤",
     "brandname":"MINI MOOMOO",
     "price":"20.9",
@@ -303,7 +303,7 @@
     "type":"kid"
 },{
     "id":"goods28",
-    "src":"https://pic.banggo.com/sources/images/goods/MB/790138/790138_00.jpg?x-oss-process=image/resize,m_fill,w_350/quality,Q_50",
+    "src":"http://localhost:8383/data/data-images/goods28.jpg",
     "name":"男中童海岛印花针织恤",
     "brandname":"MOOMOO",
     "price":"35.9",
@@ -314,7 +314,7 @@
     "type":"kid"
 },{
     "id":"goods29",
-    "src":"https://pic.banggo.com/sources/images/goods/MC/500348/500348_00.jpg?x-oss-process=image/resize,m_fill,w_350/quality,Q_50",
+    "src":"http://localhost:8383/data/data-images/goods29.jpg",
     "name":"男童条纹印花针织短袖恤",
     "brandname":"米喜迪",
     "price":"89.9",
@@ -325,7 +325,7 @@
     "type":"kid"
 },{
     "id":"goods30",
-    "src":"https://pic.banggo.com/sources/images/goods/MB/606510/606510_00.jpg?x-oss-process=image/resize,m_fill,w_350/quality,Q_50",
+    "src":"http://localhost:8383/data/data-images/goods30.jpg",
     "name":"亲子装-男童雷神休闲运动外套",
     "brandname":"MOOMOO",
     "price":"83.9",
@@ -336,7 +336,7 @@
     "type":"kid"
 },{
     "id":"goods31",
-    "src":"https://pic.banggo.com/sources/images/goods/MB/606523/606523_00.jpg?x-oss-process=image/resize,m_fill,w_350/quality,Q_50",
+    "src":"http://localhost:8383/data/data-images/goods31.jpg",
     "name":"女童荷叶边牛仔夹克",
     "brandname":"MOOMOO",
     "price":"90.9",
@@ -347,7 +347,7 @@
     "type":"kid"
 },{
     "id":"goods32",
-    "src":"https://pic.banggo.com/sources/images/goods/MC/500455/500455_00.jpg?x-oss-process=image/resize,m_fill,w_350/quality,Q_50",
+    "src":"http://localhost:8383/data/data-images/goods32.jpg",
     "name":"男童三幅汽车印花针织短袖恤",
     "brandname":"米喜迪",
     "price":"59.9",
@@ -358,7 +358,7 @@
     "type":"kid"
 },{
     "id":"goods33",
-    "src":"https://pic.banggo.com/sources/images/goods/MC/594015/594015_00.jpg?x-oss-process=image/resize,m_fill,w_350/quality,Q_50",
+    "src":"http://localhost:8383/data/data-images/goods33.jpg",
     "name":"女童梦幻纱梭织连衣裙",
     "brandname":"米喜迪",
     "price":"199.9",
@@ -369,7 +369,7 @@
     "type":"kid"
 },{
     "id":"goods34",
-    "src":"https://pic.banggo.com/sources/images/goods/MC/594086/594086_00.jpg?x-oss-process=image/resize,m_fill,w_350/quality,Q_50",
+    "src":"http://localhost:8383/data/data-images/goods34.jpg",
     "name":"女童荷叶边压褶公主梭织连衣裙",
     "brandname":"米喜迪",
     "price":"199.9",
@@ -380,7 +380,7 @@
     "type":"kid"
 },{
     "id":"goods35",
-    "src":"https://pic.banggo.com/sources/seller/goods/image/5200543/A75817/A75817_00.jpg?x-oss-process=image/resize,m_fill,w_350/quality,Q_50",
+    "src":"http://localhost:8383/data/data-images/goods35.jpg",
     "name":"男士春季新品4D打印飞织鞋网布鞋运动鞋潮鞋夏季椰子鞋",
     "brandname":"香港老爷车",
     "price":"118.00",
@@ -391,7 +391,7 @@
     "type":"shoes"
 },{
     "id":"goods36",
-    "src":"https://pic.banggo.com/sources/seller/goods/image/5200543/A75811/A75811_00.jpg?x-oss-process=image/resize,m_fill,w_350/quality,Q_50",
+    "src":"http://localhost:8383/data/data-images/goods36.jpg",
     "name":"女款春季新品小熊运动潮鞋",
     "brandname":"香港老爷车",
     "price":"98.00",
@@ -402,7 +402,7 @@
     "type":"shoes"
 },{
     "id":"goods37",
-    "src":"https://pic.banggo.com/sources/seller/goods/image/5200497/A62736/A62736_00.jpg?x-oss-process=image/resize,m_fill,w_350/quality,Q_50",
+    "src":"http://localhost:8383/data/data-images/goods37.jpg",
     "name":"2018秋冬新款透气女鞋网面女式运动鞋女韩版厚底鞋学生休闲鞋",
     "brandname":"维丹诺",
     "price":"64.00",
@@ -413,7 +413,7 @@
     "type":"shoes"
 },{
     "id":"goods38",
-    "src":"https://pic.banggo.com/sources/seller/goods/image/5200559/A78600/A78600_00.jpg?x-oss-process=image/resize,m_fill,w_350/quality,Q_50",
+    "src":"http://localhost:8383/data/data-images/goods38.jpg",
     "name":"白色硫化鞋韩版经典男鞋2019新款低帮帆布鞋情侣款学生鞋",
     "brandname":"铂绽",
     "price":"59.00",
@@ -424,7 +424,7 @@
     "type":"shoes"
 },{
     "id":"goods39",
-    "src":"https://pic.banggo.com/sources/seller/goods/image/5200559/A78607/A78607_00.jpg?x-oss-process=image/resize,m_fill,w_350/quality,Q_50",
+    "src":"http://localhost:8383/data/data-images/goods39.jpg",
     "name":"新款休闲男鞋学生潮鞋春季小白鞋潮流运动鞋男板鞋",
     "brandname":"铂绽",
     "price":"69.00",
@@ -435,7 +435,7 @@
     "type":"shoes"
 },{
     "id":"goods40",
-    "src":"https://pic.banggo.com/sources/seller/goods/image/5200543/A75821/A75821_00.jpg?x-oss-process=image/resize,m_fill,w_350/quality,Q_50",
+    "src":"http://localhost:8383/data/data-images/goods40.jpg",
     "name":"春夏新品透气飞织鞋时尚运动休闲网鞋",
     "brandname":"香港老爷车",
     "price":"98.00",
@@ -446,7 +446,7 @@
     "type":"shoes"
 },{
     "id":"goods41",
-    "src":"https://pic.banggo.com/sources/seller/goods/image/5200543/A75823/A75823_00.jpg?x-oss-process=image/resize,m_fill,w_350/quality,Q_50",
+    "src":"http://localhost:8383/data/data-images/goods41.jpg",
     "name":"男款春款小熊鞋熊猫鞋网红款板鞋小白鞋运动鞋潮鞋",
     "brandname":"香港老爷车",
     "price":"98.00",
@@ -457,7 +457,7 @@
     "type":"shoes"
 },{
     "id":"goods42",
-    "src":"https://pic.banggo.com/sources/seller/goods/image/5200543/A75815/A75815_00.jpg?x-oss-process=image/resize,m_fill,w_350/quality,Q_50",
+    "src":"http://localhost:8383/data/data-images/goods42.jpg",
     "name":"春季开学季男鞋韩版板鞋单鞋男小白鞋潮鞋学生鞋",
     "brandname":"香港老爷车",
     "price":"88.00",
