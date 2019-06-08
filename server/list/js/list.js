@@ -29,21 +29,26 @@ class List{
              callback:function(index){
                 that.index=index;
                 that.display();
+                that.link();
                 //console.log(index);
              }
          })
-    
+         
      }
+        link(){
+            this.list.on("click",".goodslist",function(){
+                var goodsId=$(this).attr("id");
+                location.href="http://localhost:8383/details/details.html?shangpin="+goodsId;
+            })
+        }
         display(){
            // console.log(1);
            var that=this;
-            console.log(this.res.length);
             var str="";
             //this.index*this.num---this.index*this.display.num+this.num;
-            console.log(this.index*this.num+this.num)
             for(var i=this.index*this.num;i<this.index*this.num+this.num;i++){
                 if(i<this.res.length){
-                    console.log(i);
+                    //console.log(i);
                     str+=`<li class="goodslist" id=${this.res[i].id}>
                             <div class="goods_img_box">
                                 <a>
@@ -62,8 +67,7 @@ class List{
                                 <i>￥${this.res[i].oldprice}</i>
                             </div>
                         </li>` 
-                } 
-                console.log(str);         
+                }          
             }
             //console.log(str);
             //console.log(this.list);
@@ -75,10 +79,6 @@ class List{
                         background:"none"
                     })
                 }
-            }
-
-            onscroll=function(){
-                that.lazyLog();
             }
             this.setOpacity();
         }
